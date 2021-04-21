@@ -1,0 +1,3 @@
+#!/bin/bash
+
+type_and_run 'mkdir test'

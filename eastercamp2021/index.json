@@ -1,9 +1,9 @@
 {
   "type": "challenge@0.6",
-  "title": "Hello World",
-  "description": "My first scenario.",
+  "title": "Linux AmongUs",
+  "description": "Tauche ein in die Welt der Linux-Shell",
   "difficulty": "Beginner",
-  "time": "10",
+  "time": "60",
   "details": {
     "steps": [ ],
     "intro": {
@@ -14,7 +14,6 @@
     "assets": {
       "host01": [
           {"file": "challenge.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-          {"file": "cheat", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
