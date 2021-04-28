@@ -13,7 +13,7 @@
     },
     "assets": {
       "host01": [
-          {"file": "challenge.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+          {"file": "challenge.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
