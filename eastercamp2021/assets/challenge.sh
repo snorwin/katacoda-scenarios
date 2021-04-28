@@ -17,7 +17,7 @@ function kc_start_tasks()
 
   kc_task \
       "$(tput sgr 0)$(tput setaf 6) Damit du einen Raum betreten kannst musst du das Kommando $(tput setaf 3)cd$(tput sgr 0)$(tput setaf 6) gefolgt von dem Namen des Ordner verwenden. Tippe $(tput setaf 3)cd Admin$(tput sgr 0)$(tput setaf 6) ins Terminal um in den $(tput setaf 1)$(tput setab 7)Admin$(tput sgr 0)$(tput setaf 6)  zu gelangen.\n\n" \
-      "\U0001f4ab Perfekt!\n\nFalls du jetzt wieder in den Raum von vorher zurück mochtest kannst du einfach $(tput setaf 3)cd ..$(tput sgr 0) eingeben." \
+      "\U0001f4ab  Perfekt!\n\nFalls du jetzt wieder in den Raum von vorher zurück mochtest kannst du einfach $(tput setaf 3)cd ..$(tput sgr 0) eingeben." \
       "pgrep bash | xargs -L1 pwdx | grep Admin"
 
   kc_task \
