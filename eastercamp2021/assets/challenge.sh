@@ -3,7 +3,7 @@
 function kc_start_tasks()
 {
   kc_instructions \
-      "Herzlich willkommen! Du bist nun ein Teil der Crew.\n" \
+      " _______                              _______        \n|   _   |.--------.-----.-----.-----.|   |   |.-----.\n|       ||        |  _  |     |  _  ||   |   ||__ --|\n|___|___||__|__|__|_____|__|__|___  ||_______||_____|\n                              |_____|    \n\n\nHerzlich willkommen! Du bist nun ein Teil der Crew.\n" \
 
   kc_task \
       "$(tput sgr 0)$(tput setaf 6) Um herauszufinden in welchem Raum du dich gerade befindest Tippe $(tput setaf 3)pwd$(tput sgr 0)$(tput setaf 6) in das Terminal (links) und bestätige mit der <Enter> Taste.$(tput sgr 0)\n\n" \
@@ -12,11 +12,11 @@ function kc_start_tasks()
 
   kc_task \
       "$(tput sgr 0)$(tput setaf 6) Du kannst dich in einem Raum umzusehen in dem du dich gerade befindest mit dem Kommando $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6). Probiere es doch gleich mal aus.$(tput sgr 0)\n\n" \
-      "\u2728 $(tput setaf 2)Super!$(tput sgr 0)\n\nEs gibt hier in der Cafeteria verschiedene Gegenstände (Dateien) mit denen du interagieren kannst und weitere Rauem (Ordner) welche du betreten kannst.\n\n" \
+      "\u2728  $(tput setaf 2)Super!$(tput sgr 0)\n\nEs gibt hier in der Cafeteria verschiedene Gegenstände (Dateien) mit denen du interagieren kannst und weitere Rauem (Ordner) welche du betreten kannst.\n\n" \
       "cat /tmp/ls | grep 1"
 
   kc_task \
-      "$(tput sgr 0)$(tput setaf 6) Damit du einen Raum betreten kannst musst du das Kommando $(tput setaf 3)cd$(tput sgr 0)$(tput setaf 6) gefolgt von dem Namen des Ordner verwenden. Tippe $(tput setaf 3)cd Admin$(tput sgr 0)$(tput setaf 6) ins Terminal um in den $(tput setaf 1)$(tput setab 7)Admin$(tput sgr 0) zu gelangen.\n\n" \
-      "\U0001f4ab $(tput setaf 2)Perfekt!$(tput sgr 0)\n" \
-      "pwd | grep Admin"
+      "$(tput sgr 0)$(tput setaf 6) Damit du einen Raum betreten kannst musst du das Kommando $(tput setaf 3)cd$(tput sgr 0)$(tput setaf 6) gefolgt von dem Namen des Ordner verwenden. Tippe $(tput setaf 3)cd Admin$(tput sgr 0)$(tput setaf 6) ins Terminal um in den $(tput setaf 1)$(tput setab 7)Admin$(tput sgr 0)$(tput setaf 6)  zu gelangen.\n\n" \
+      "\U0001f4ab  $(tput setaf 2)Perfekt!$(tput sgr 0)\n" \
+      "pgrep bash | xargs -L1 pwdx | grep Admin"
 }
