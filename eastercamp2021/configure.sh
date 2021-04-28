@@ -10,8 +10,8 @@ mkdir /AmongUs/Cafeteria/Admin
 mkdir /AmongUs/Cafeteria/Lager
 mkdir /AmongUs/Cafeteria/O2
 
-echo "alias pwd='pwd && echo 1 > /tmp/pwd'" >> /root/.bashrc
-echo "alias ls='ls && echo 1 > /tmp/ls'" >> /root/.bashrc
+echo "alias pwd='echo 1 > /tmp/pwd && pwd'" >> /root/.bashrc
+echo "alias ls='echo 1 > /tmp/ls && ls'" >> /root/.bashrc
 
 echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
