@@ -7,6 +7,6 @@ mkdir /AmongUs/Cafeteria
 
 cd /AmongUs/Cafeteria
 
-alias pwd='pwd && echo 1 > /tmp/pwd'
+echo "alias pwd='pwd && echo 1 > /tmp/pwd'" >> /root/.bashrc
 
 echo 'done' > /opt/katacoda-background-finished
