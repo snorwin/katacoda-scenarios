@@ -14,7 +14,7 @@ progress-bar() {
   clean_line
 }
 
-if cat /tmp/download | grep 1; then
+if cat /tmp/download 2>/dev/null | grep 1; then
   echo "Upload:"
   progress-bar 10
   echo 1 > /tmp/upload
