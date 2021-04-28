@@ -6,6 +6,7 @@ sed -i 's/echo "Complete the following tasks to progress:"//' /usr/local/bin/cha
 
 mkdir /AmongUs/
 mkdir /AmongUs/Cafeteria
+mkdir /AmongUs/Cafeteria/Admin
 mkdir /AmongUs/Cafeteria/Lager
 mkdir /AmongUs/Cafeteria/O2
 
