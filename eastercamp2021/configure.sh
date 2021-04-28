@@ -6,6 +6,7 @@ sed -i 's/echo "Complete the following tasks to progress:"//' /usr/local/bin/cha
 sed -i 's/Katacoda Challenge//' /usr/local/bin/challenge.sh
 sed -i 's/Please share your feedback://' /usr/local/bin/challenge.sh
 sed -i 's/https:\/\/get.oreilly.com\/skills-challenge-survey.html//' /usr/local/bin/challenge.sh
+sed -i 's/printf "$value" | fmt $FMT_OPTIONS/printf "$value"/' /usr/local/bin/challenge.sh
 
 mkdir -p /AmongUs/
 mkdir -p /AmongUs/Cafeteria

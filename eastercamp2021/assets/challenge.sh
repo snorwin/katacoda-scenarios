@@ -2,12 +2,8 @@
 
 function kc_start_tasks()
 {
-  export FMT_OPTIONS="-s"
-
   kc_instructions \
       "$(tput setaf 4)$(cat /AmongUs/logo)$(tput sgr 0)\n\n\nHerzlich willkommen! Du bist nun ein Teil der Crew.\n" \
-
-  export FMT_OPTIONS=""
 
   kc_task \
       "$(tput sgr 0)$(tput setaf 6) Um herauszufinden in welchem Raum du dich gerade befindest Tippe $(tput setaf 3)pwd$(tput sgr 0)$(tput setaf 6) in das Terminal (links) und bestätige jedes Kommando mit der $(tput setaf 3)ENTER$(tput sgr 0)$(tput setaf 6) Taste.$(tput sgr 0)\n\n" \
@@ -25,7 +21,7 @@ function kc_start_tasks()
       "pgrep bash | xargs -L1 pwdx | grep Admin"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Um das Spiel zu starten, gehe nun zurück in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0).\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Um das Spiel zu starten, gehe nun zurück in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6).\n\n" \
     "\nFalls du dich mal komplett verirrt hast, verwende das Kommando $(tput setaf 3)cd /AmongUs/Cafeteria$(tput sgr 0)$(tput setaf 6) um immer wieder in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0) zu gelangen." \
     "! pgrep bash | xargs -L1 pwdx | grep -v Cafeteria/"
 }
