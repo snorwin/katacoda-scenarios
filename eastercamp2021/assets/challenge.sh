@@ -27,7 +27,7 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Einen Überblick von der ganzen Map (Karte) bekommst du am besten, wenn du in der $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) das Kommando $(tput setaf 3)tree -d$(tput sgr 0)$(tput setaf 6) verwendest. Versuche es doch einmal.\n\n" \
-    "\U0001f62e  Wow, da gibt es ja viele verscheiden Räume.\n\nVon der $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$ kommst du aber nicht direkt zum $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0) Raum, du musst zuerst ins $(tput setaf 1)$(tput setab 7)Lager$(tput sgr 0).\n" \
+    "\U0001f62e  Wow, da gibt es ja viele verscheiden Räume.\n\nVon der $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0) kommst du aber nicht direkt zum $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0) Raum, du musst zuerst ins $(tput setaf 1)$(tput setab 7)Lager$(tput sgr 0).\n" \
     "cat /tmp/tree | grep 1"
 
   kc_task \
@@ -35,5 +35,10 @@ function kc_start_tasks()
     "" \
     "pgrep bash | xargs -L1 pwdx | grep Reaktor"
 
+  rm /tmp/ls
 
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6)Du bist im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) \u2622 angekommen, sehe dich mal einwenig im Raum um.\n\n" \
+    "" \
+    "cat /tmp/ls | grep 1"
 }
