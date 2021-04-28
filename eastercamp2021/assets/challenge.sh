@@ -2,6 +2,8 @@
 
 function kc_start_tasks()
 {
+  export FMT_OPTIONS="-s"
+
   kc_instructions \
       "$(tput setaf 4)$(cat /AmongUs/logo)$(tput sgr 0)\n\n\nHerzlich willkommen! Du bist nun ein Teil der Crew.\n" \
 
