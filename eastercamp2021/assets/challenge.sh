@@ -10,14 +10,12 @@ function kc_start_tasks()
       "Gut gemacht!\n" \
       "cat /tmp/pwd | grep 1"
 
-  kc_instructions \
-      "Du siehst du befindest dich gerade in der $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0). Das Kommando \`$(tput setaf 3)pwd$(tput sgr 0)\` (Abkürzung für Englisch 'print working directory' 'zeige aktuellen Ordner') zeigt dir immer an wo Du dich gerade befindest. Dabei wir dir der ganze Pfad angezeigt und das letzte Element ist jeweils das Ordner and dem du dich befindest.\n"
+  echo "Du siehst du befindest dich gerade in der $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0). Das Kommando \`$(tput setaf 3)pwd$(tput sgr 0)\` (Abkürzung für Englisch 'print working directory' 'zeige aktuellen Ordner') zeigt dir immer an wo Du dich gerade befindest. Dabei wir dir der ganze Pfad angezeigt und das letzte Element ist jeweils das Ordner and dem du dich befindest.\n"
 
-  kc_instructions \
-    "Notiere dir unbedingt jedes Kommando und was du damit machen kannst, du weisst ja nicht wann du es das nächste mal wieder benötigst.\n"
+  echo "Notiere dir unbedingt jedes Kommando und was du damit machen kannst, du weisst ja nicht wann du es das nächste mal wieder benötigst.\n"
 
   kc_task \
-      " Um dich in dem Raum umzusehen in dem du dich gerade befindest verwende das Kommando ‘ls’. Probiere es doch gleich mal aus." \
-      "Gut gemacht!\n" \
+      " Du kannst dich in einem Raum (Ordner) umzusehen in dem du dich gerade befindest mit dem Kommando ‘ls’. Probiere es doch gleich mal aus." \
+      "Es gibt hier in der Cafeteria verschiedene Gegenstände (Dateien) mit denen du interagieren kannst und weitere Rauem (Ordner)  welch du betreten kannst.\n" \
       "cat /tmp/ls | grep 1"
 }
