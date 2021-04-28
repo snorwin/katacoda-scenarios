@@ -12,6 +12,6 @@ mkdir /AmongUs/Cafeteria/O2
 echo "alias pwd='pwd && echo 1 > /tmp/pwd'" >> /root/.bashrc
 echo "alias ls='ls && echo 1 > /tmp/ls'" >> /root/.bashrc
 
-echo "cd /AmongUs/Cafeteria'" >> /root/.bashrc
+echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
 echo 'done' > /opt/katacoda-background-finished
