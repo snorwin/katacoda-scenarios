@@ -31,19 +31,19 @@ function kc_start_tasks()
     "cat /tmp/tree | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6)Probiere nun mit $(tput setaf 3)cd$(tput sgr 0)$(tput setaf 6) in das $(tput setaf 1)$(tput setab 7)Lager$(tput sgr 0)$(tput setaf 6) und anschliessend zum $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) zu kommen.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Probiere nun mit $(tput setaf 3)cd$(tput sgr 0)$(tput setaf 6) in das $(tput setaf 1)$(tput setab 7)Lager$(tput sgr 0)$(tput setaf 6) und anschliessend zum $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) zu kommen.\n\n" \
     "" \
     "pgrep bash | xargs -L1 pwdx | grep Reaktor"
 
   rm /tmp/ls
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6)Du bist im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) \u2622 angekommen, sehe dich mal einwenig im Raum um.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Du bist im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) angekommen, sehe dich mal einwenig im Raum um.\n\n" \
     "\nSiehst du das Programm $(tput bold)$(tput setaf 2)Download$(tput sgr 0)?\n" \
     "cat /tmp/ls | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6)Starte das Download Programm indem du $(tput setaf 3)./Download$(tput sgr 0)$(tput setaf 6) als Kommando eingibst.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Starte das Download Programm indem du $(tput setaf 3)./Download$(tput sgr 0)$(tput setaf 6) als Kommando eingibst.\n\n" \
     "" \
     "cat /tmp/download | grep 1"
 }

@@ -18,6 +18,8 @@ mkdir -p /AmongUs/Cafeteria/Navigation
 mkdir -p /AmongUs/Cafeteria/Security
 
 echo "Abfall" > /AmongUs/Cafeteria/Abfall
+echo "Abfall" > /AmongUs/Cafeteria/Navigation/Abfall
+echo "Abfall" > /AmongUs/Cafeteria/Admin/O2/Abfall
 
 echo "alias pwd='echo 1 > /tmp/pwd && pwd'" >> /root/.bashrc
 echo "alias ls='echo 1 > /tmp/ls && ls --color=auto'" >> /root/.bashrc
