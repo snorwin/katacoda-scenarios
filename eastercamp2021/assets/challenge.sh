@@ -12,7 +12,7 @@ function kc_start_tasks()
 
   kc_task \
       "$(tput sgr 0)$(tput setaf 6) Du kannst dich in einem Raum umzusehen in dem du dich gerade befindest mit dem Kommando $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6). Probiere es doch gleich mal aus.$(tput sgr 0)\n\n" \
-      "\u2728  Super!\n\nEs gibt hier in der Cafeteria verschiedene Gegenstände ($(tput bold)Dateien$(tput sgr 0) und $(tput bold)$(tput setaf 3)Programme$(tput sgr 0)) mit denen du interagieren kannst und weitere Räume($(tput bold)$(tput setaf 4)Ordner$(tput sgr 0)) welche du betreten kannst.\n\n" \
+      "\u2728  Super!\n\nEs gibt hier in der Cafeteria verschiedene Gegenstände ($(tput bold)Dateien$(tput sgr 0) und $(tput bold)$(tput setaf 2)Programme$(tput sgr 0)) mit denen du interagieren kannst und weitere Räume($(tput bold)$(tput setaf 4)Ordner$(tput sgr 0)) welche du betreten kannst.\n\n" \
       "cat /tmp/ls | grep 1"
 
   kc_task \

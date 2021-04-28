@@ -14,6 +14,7 @@
     "assets": {
       "host01": [
           {"file": "logo", "target": "/AmongUs"},
+          {"file": "upload", "target": "/AmongUs/Cafeteria", ",chmod": "+x"},
           {"file": "challenge.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }

@@ -17,6 +17,8 @@ mkdir -p /AmongUs/Cafeteria/Lager/Reaktor
 mkdir -p /AmongUs/Cafeteria/Navigation
 mkdir -p /AmongUs/Cafeteria/Security
 
+echo "Abfall" > /AmongUs/Cafeteria/Abfall
+
 echo "alias pwd='echo 1 > /tmp/pwd && pwd'" >> /root/.bashrc
 echo "alias ls='echo 1 > /tmp/ls && ls --color=auto'" >> /root/.bashrc
 echo "alias tree='echo 1 > /tmp/tree && tree'" >> /root/.bashrc
