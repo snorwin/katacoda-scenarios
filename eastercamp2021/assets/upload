@@ -18,7 +18,7 @@ if cat /tmp/download 2>/dev/null | grep 1 > /dev/null; then
   echo "Upload:"
   progress-bar 10
   echo 1 > /tmp/upload
-  echo "/n"
+  echo ""
 else
   echo "Fehler - Du musst die Informationen zuerst herunterladen!"
 fi
