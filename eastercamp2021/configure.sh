@@ -18,8 +18,8 @@ mkdir -p /AmongUs/Cafeteria/Navigation
 mkdir -p /AmongUs/Cafeteria/Security
 
 echo "alias pwd='echo 1 > /tmp/pwd && pwd'" >> /root/.bashrc
-echo "alias ls='echo 1 > /tmp/ls && ls'" >> /root/.bashrc
-echo "alias ls='echo 1 > /tmp/tree && tree'" >> /root/.bashrc
+echo "alias ls='echo 1 > /tmp/ls && ls --color=auto'" >> /root/.bashrc
+echo "alias tree='echo 1 > /tmp/tree && tree'" >> /root/.bashrc
 
 echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
