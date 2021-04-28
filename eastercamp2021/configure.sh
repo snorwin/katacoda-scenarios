@@ -3,15 +3,18 @@ launch.sh
 apt install bc
 
 sed -i 's/echo "Complete the following tasks to progress:"//' /usr/local/bin/challenge.sh
-sed -i 's/printf "\x1b[32mKatacoda Challenge\x1b[0m\n";//' /usr/local/bin/challenge.sh
-sed -i 's/printf "Please share your feedback:\n";//' /usr/local/bin/challenge.sh
-sed -i 's/printf "https://get.oreilly.com/skills-challenge-survey.html\n";//' /usr/local/bin/challenge.sh
+sed -i 's/\x1b[32mKatacoda Challenge\x1b[0m\n//' /usr/local/bin/challenge.sh
+sed -i 's/Please share your feedback:\n//' /usr/local/bin/challenge.sh
+sed -i 's/https://get.oreilly.com/skills-challenge-survey.html\n//' /usr/local/bin/challenge.sh
 
 mkdir -p /AmongUs/
 mkdir -p /AmongUs/Cafeteria
-mkdir -p /AmongUs/Cafeteria/Admin
+mkdir -p /AmongUs/Cafeteria/Admin/O2
 mkdir -p /AmongUs/Cafeteria/Lager
-mkdir -p /AmongUs/Cafeteria/O2
+mkdir -p /AmongUs/Cafeteria/Lager/Elektrik
+mkdir -p /AmongUs/Cafeteria/Lager/Reaktor
+mkdir -p /AmongUs/Cafeteria/Navigation
+mkdir -p /AmongUs/Cafeteria/Security
 
 echo "alias pwd='echo 1 > /tmp/pwd && pwd'" >> /root/.bashrc
 echo "alias ls='echo 1 > /tmp/ls && ls'" >> /root/.bashrc
