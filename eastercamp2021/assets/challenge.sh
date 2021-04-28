@@ -39,6 +39,11 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6)Du bist im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) \u2622 angekommen, sehe dich mal einwenig im Raum um.\n\n" \
-    "" \
+    "\nSiehst du das Programm $(tput bold)$(tput setaf 2)Download$(tput sgr 0)?\n" \
     "cat /tmp/ls | grep 1"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6)Starte das Download Programm indem du $(tput setaf 3)./Download$(tput sgr 0)$(tput setaf 6) als Kommando eingibst.\n\n" \
+    "" \
+    "cat /tmp/download | grep 1"
 }
