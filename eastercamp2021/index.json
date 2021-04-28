@@ -13,7 +13,7 @@
     },
     "assets": {
       "host01": [
-          {"file": "logo", "target": "/AmongUs/logo"},
+          {"file": "logo", "target": "/AmongUs"},
           {"file": "challenge.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }

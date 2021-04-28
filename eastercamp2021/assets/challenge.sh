@@ -3,7 +3,7 @@
 function kc_start_tasks()
 {
   kc_instructions \
-      "\n\n\nHerzlich willkommen! Du bist nun ein Teil der Crew.\n" \
+      "$(tput setaf 4)$(cat /AmongUs/logo)$(tput sgr 0)\n\n\nHerzlich willkommen! Du bist nun ein Teil der Crew.\n" \
 
   kc_task \
       "$(tput sgr 0)$(tput setaf 6) Um herauszufinden in welchem Raum du dich gerade befindest Tippe $(tput setaf 3)pwd$(tput sgr 0)$(tput setaf 6) in das Terminal (links) und bestätige mit der <Enter> Taste.$(tput sgr 0)\n\n" \
