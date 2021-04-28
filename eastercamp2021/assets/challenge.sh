@@ -15,4 +15,9 @@ function kc_start_tasks()
 
   kc_instructions \
     "Notiere dir unbedingt jedes Kommando und was du damit machen kannst, du weisst ja nicht wann du es das nächste mal wieder benötigst.\n"
+
+  kc_task \
+      " Um dich in dem Raum umzusehen in dem du dich gerade befindest verwende das Kommando ‘ls’. Probiere es doch gleich mal aus." \
+      "Gut gemacht!\n" \
+      "cat /tmp/ls | grep 1"
 }
