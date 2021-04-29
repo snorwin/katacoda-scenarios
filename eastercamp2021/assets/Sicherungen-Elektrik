@@ -1,0 +1,14 @@
+# Das ist die Sicherung für die Elektrik
+# Y = Bedeutet das die Sicherung an ist
+# N = Bedeutet das die Sicherung aus ist
+
+# Elektrik für das Admin, Lager, Antrieb
+Elektrik 1 = N
+# Elektrik für den Generator
+Elektrik 2 = Y
+# Elektrik für die Kanonen
+Elektrik 3 = Y
+# Elektrik für die Navigation & Security
+Elektrik 4 = N
+# Elektrik für O2
+Elektrik 5 = N

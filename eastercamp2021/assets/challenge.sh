@@ -49,6 +49,21 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Begebe dich in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und lade dort die Informationen wieder hoch, um die erste Aufgabe abzuschliessen.\n\n" \
-    "\U0001f4aa  Echt stark, du hast deine erste Aufgabe erfolgreich abgeschlossen... \n\n\U0001F4A5 Peng! Achtung der Imposter hat im Lager die Elektrik manipuliert und die Sicherungen für das Licht ausgeschaltet. Nun sehen wir fast nichts mehr. Wir müssen den Weg zum Elektrik Raum finden um das Licht wieder anzuschalten. " \
+    "\U0001f4aa  Echt stark, du hast deine erste Aufgabe erfolgreich abgeschlossen... \n\n\n\U0001F4A5  Peng! Achtung der Imposter hat die Elektrik manipuliert und die Sicherungen für das Licht ausgeschaltet. Nun sehen wir fast nichts mehr. Wir müssen den Weg zum $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0) Raum finden um das Licht wieder anzuschalten. " \
     "cat /tmp/upload | grep 1"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6) Nun ist es deine Aufgabe in den $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0)$(tput setaf 6) Raum zu gelangen und die Sicherungen zu überprüfen.\n\n" \
+    "\nSuper, wir sind nun im $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0) Raum angekommen und können die verschiedenen Sicherungen des Systems überprüfen. Um die verschiedenen Sicherungen anzuschauen, kann die jeweilige Datei mit dem Befehl $(tput setaf 3)cat$(tput sgr 0) gefolgt vom Namen der $(tput bold)Datei$(tput sgr 0) ausgelesen werden." \
+    "pgrep bash | xargs -L1 pwdx | grep Elektrik"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6) Versuche nun zuerst mit $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6) den Namen herauszufinden und lese anschliessend mit $(tput setaf 3)cat$(tput sgr 0)$(tput setaf 6) die Sicherungen aus.\n\n" \
+    "\nSind nun Sicherungen herausgefallen? Falls ja, müssen diese wieder aktiviert werden. Dafür kann die Datei mit $(tput setaf 3)nano$(tput sgr 0) bearbeitet werden.\nN = Sicherung ist nicht Aktiv\nY= Die Sicherung ist Aktiv" \
+    "cat /tmp/cat | grep Sicherungen-Elektrik"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6) Öffne die Datei mit dem Kommando $(tput setaf 3)nano Sicherungen-Elektrik$(tput sgr 0)$(tput setaf 6)." \
+    "\U0001f4a1  Grandios! Du hast es geschafft die Sicherungen wieder zu aktivieren. Somit konnte das Licht wieder angestellt werden und wir können mit den Aufgaben weiterfahren." \
+    "! cat /AmongUs/Cafeteria/Lager/Elektrik/Sicherungen-Elektrik | grep \"= N\""
 }
