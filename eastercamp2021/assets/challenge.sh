@@ -59,7 +59,7 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Versuche nun zuerst mit $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6) den Namen herauszufinden und lese anschliessend mit $(tput setaf 3)cat$(tput sgr 0)$(tput setaf 6) die Sicherungen aus.\n" \
-    "\nSind nun Sicherungen herausgefallen? Falls ja, müssen diese wieder aktiviert werden. Dafür kann die Datei mit $(tput setaf 3)nano$(tput sgr 0) bearbeitet werden.\n\nN = Sicherung ist nicht Aktiv\n\nY = Die Sicherung ist Aktiv" \
+    "\nSind nun Sicherungen herausgefallen? Falls ja, müssen diese wieder aktiviert werden. Dafür kann die Datei mit $(tput setaf 3)nano$(tput sgr 0) bearbeitet werden.\n\nY = Sicherung ist eingeschaltet\n\nN = Sicherung ist ausgeschaltet" \
     "cat /tmp/cat | grep Sicherungen-Elektrik"
 
   kc_task \
@@ -68,9 +68,9 @@ function kc_start_tasks()
     "cat /tmp/nano | grep Sicherungen-Elektrik"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Aktiviere nun die Sicherungen indem der Buchstabe $(tput setaf 3)N$(tput sgr 0)$(tput setaf 6) mit dem Buchstaben $(tput setaf 3)Y$(tput sgr 0)$(tput setaf 6) ersetzt wird. Wurde das gemacht, kann das File mit der Tastenkombination $(tput setaf 3)Ctrl + X$(tput sgr 0)$(tput setaf 6) geschlossen werden.\n\nAchtung! Die Veränderungen müssen nach der Eingabe mit $(tput setaf 3)Ctrl + O$(tput sgr 0)$(tput setaf 6) und $(tput setaf 3)ENTER$(tput sgr 0)$(tput setaf 6) gespeichert werden.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Aktiviere nun die Sicherungen indem der Buchstabe $(tput setaf 3)N$(tput sgr 0)$(tput setaf 6) mit dem Buchstaben $(tput setaf 3)Y$(tput sgr 0)$(tput setaf 6) ersetzt wird. Wurde das gemacht, kann das File mit der Tastenkombination $(tput setaf 3)Ctrl + X$(tput sgr 0)$(tput setaf 6) geschlossen werden.\n\nAchtung! Die Veränderungen müssen nach der Eingabe mit $(tput setaf 3)Y$(tput sgr 0)$(tput setaf 6) und $(tput setaf 3)ENTER$(tput sgr 0)$(tput setaf 6) gespeichert werden.\n\n" \
     "\U0001f4a1  Grandios! Du hast es geschafft die Sicherungen wieder zu aktivieren. Somit konnte das Licht wieder angestellt werden und wir können mit den Aufgaben weiterfahren.\n\nDeine nächste Aufgabe ist es den Abfall zu entsorgen." \
-    "! pgrep nano && cat /AmongUs/Cafeteria/Lager/Elektrik/Sicherungen-Elektrik | grep \"= N\""
+    "(! pgrep nano) && (! cat /AmongUs/Cafeteria/Lager/Elektrik/Sicherungen-Elektrik | grep \"= N\")"
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Gehe zurück in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und verwende das Kommando $(tput setaf 3)find$(tput sgr 0)$(tput setaf 6) um herauszufinden in welchen Räumen der Abfall liegt.\n" \

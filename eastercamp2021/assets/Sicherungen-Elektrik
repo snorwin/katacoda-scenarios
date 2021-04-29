@@ -1,6 +1,6 @@
 # Das ist die Sicherung für die Elektrik
-# Y = Bedeutet das die Sicherung an ist
-# N = Bedeutet das die Sicherung aus ist
+# Y = Sicherung ist eingeschaltet
+# N = Sicherung ist ausgeschaltet
 
 # Elektrik für das Admin, Lager, Antrieb
 Elektrik 1 = N
