@@ -63,7 +63,7 @@ function kc_start_tasks()
     "cat /tmp/cat | grep Sicherungen-Elektrik"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Öffne die Datei mit dem Kommando $(tput setaf 3)nano Sicherungen-Elektrik$(tput sgr 0)$(tput setaf 6).\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Öffne die Datei mit dem Kommando $(tput setaf 3)nano Sicherungen-Elektrik$(tput sgr 0)$(tput setaf 6).\n" \
     "" \
     "cat /tmp/nano | grep Sicherungen-Elektrik"
 
