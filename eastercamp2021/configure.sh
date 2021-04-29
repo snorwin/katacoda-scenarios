@@ -25,7 +25,7 @@ echo "alias pwd='echo 1 > /tmp/pwd && pwd'" >> /root/.bashrc
 echo "alias ls='echo 1 > /tmp/ls && ls --color=auto'" >> /root/.bashrc
 echo "alias tree='echo 1 > /tmp/tree && tree'" >> /root/.bashrc
 echo "function cat() { /usr/bin/cat "\$@" && echo \$1 > /tmp/cat; }" >> /root/.bashrc
-echo "function nano() { /usr/bin/nano "\$@" && echo \$1 > /tmp/nano; }" >> /root/.bashrc
+echo "function nano() { echo \$1 > /tmp/nano &&/usr/bin/nano "\$@";  }" >> /root/.bashrc
 
 echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
