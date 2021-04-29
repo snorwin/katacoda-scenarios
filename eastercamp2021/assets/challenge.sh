@@ -44,6 +44,11 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Starte das Download Programm indem du $(tput setaf 3)./Download$(tput sgr 0)$(tput setaf 6) als Kommando eingibst.\n\n" \
-    "" \
+    "\nDie Informationen wurden erfolgreich heruntergeladen." \
     "cat /tmp/download | grep 1"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6) Begebe dich in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und lade dort die Informationen wieder hoch, um die erste Aufgabe abzuschliessen.\n\n" \
+    "\U0001f4aa  Echt stark, du hast deine erste Aufgabe erfolgreich abgeschlossen... \n\n\U0001F4A5 Peng! Achtung der Imposter hat im Lager die Elektrik manipuliert und die Sicherungen für das Licht ausgeschaltet. Nun sehen wir fast nichts mehr. Wir müssen den Weg zum Elektrik Raum finden um das Licht wieder anzuschalten. " \
+    "cat /tmp/upload | grep 1"
 }
