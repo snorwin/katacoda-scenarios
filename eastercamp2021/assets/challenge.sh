@@ -83,12 +83,12 @@ function kc_start_tasks()
     "/usr/bin/find /AmongUs/Cafeteria | grep Abfall | wc -l | grep 2"
 
   kc_task \
-    "Suche weiter nach Abfall\n" \
+    "$(tput sgr 0)$(tput setaf 6)  Suche weiter nach Abfall\n" \
     "\nDu hast es fast geschafft" \
     "/usr/bin/find /AmongUs/Cafeteria | grep Abfall | wc -l | grep 1"
 
   kc_task \
-    "Entsorge noch den letzten Abfall\n" \
+    "$(tput sgr 0)$(tput setaf 6)  Entsorge noch den letzten Abfall\n\n" \
     "\U0001f44d  Super, es ist nun wieder alles aufgeräumt" \
     "! /usr/bin/find /AmongUs/Cafeteria | grep Abfall"
 }

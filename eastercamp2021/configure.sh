@@ -24,7 +24,7 @@ echo "Abfall" > /AmongUs/Cafeteria/Admin/O2/Abfall
 echo "alias pwd='echo 1 > /tmp/pwd && pwd'" >> /root/.bashrc
 echo "alias ls='echo 1 > /tmp/ls && ls --color=auto'" >> /root/.bashrc
 echo "alias tree='echo 1 > /tmp/tree && tree'" >> /root/.bashrc
-echo "alias find='pwd | echo > /tmp/find && find'" >> /root/.bashrc
+echo "alias find='pwd | /usr/bin/cat > /tmp/find && find'" >> /root/.bashrc
 echo "function cat() { /usr/bin/cat "\$@" && echo \$1 > /tmp/cat; }" >> /root/.bashrc
 echo "function nano() { echo \$1 > /tmp/nano &&/usr/bin/nano "\$@";  }" >> /root/.bashrc
 
