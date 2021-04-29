@@ -21,7 +21,7 @@ function kc_start_tasks()
       "pgrep bash | xargs -L1 pwdx | grep Admin"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Um das Spiel zu starten, gehe nun zurück in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6).\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Um das Spiel zu starten, gehe nun zurück in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6).\n" \
     "\nFalls du dich mal komplett verirrt hast, verwende das Kommando $(tput setaf 3)cd /AmongUs/Cafeteria$(tput sgr 0) um immer wieder in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0) zu gelangen.\n\nJetzt wird es aber langsam Zeit dass du deine Aufgaben erledigst, aber nimm dich in acht vor dem Imposter.\n\nDeine erste Aufgabe wartet im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0) auf dich. Sehe dir die Map an, um herauszufinden wie du zu dem Raum gelangen kannst. " \
     "! pgrep bash | xargs -L1 pwdx | grep Cafeteria/"
 
@@ -38,12 +38,12 @@ function kc_start_tasks()
   rm /tmp/ls
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Du bist im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) angekommen, sehe dich mal einwenig im Raum um.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Du bist im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) angekommen, sehe dich mal einwenig im Raum um.\n" \
     "\nSiehst du das Programm $(tput bold)$(tput setaf 2)Download$(tput sgr 0)?\n" \
     "cat /tmp/ls | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Starte das Download Programm indem du $(tput setaf 3)./Download$(tput sgr 0)$(tput setaf 6) als Kommando eingibst.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Starte das Download Programm indem du $(tput setaf 3)./Download$(tput sgr 0)$(tput setaf 6) als Kommando eingibst.\n" \
     "\nDie Informationen wurden erfolgreich heruntergeladen." \
     "cat /tmp/download | grep 1"
 
@@ -53,17 +53,17 @@ function kc_start_tasks()
     "cat /tmp/upload | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Nun ist es deine Aufgabe in den $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0)$(tput setaf 6) Raum zu gelangen und die Sicherungen zu überprüfen.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Nun ist es deine Aufgabe in den $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0)$(tput setaf 6) Raum zu gelangen und die Sicherungen zu überprüfen.\n" \
     "\nSuper, wir sind nun im $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0) Raum angekommen und können die verschiedenen Sicherungen des Systems überprüfen. Um die verschiedenen Sicherungen anzuschauen, kann die jeweilige Datei mit dem Befehl $(tput setaf 3)cat$(tput sgr 0) gefolgt vom Namen der $(tput bold)Datei$(tput sgr 0) ausgelesen werden." \
     "pgrep bash | xargs -L1 pwdx | grep Elektrik"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Versuche nun zuerst mit $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6) den Namen herauszufinden und lese anschliessend mit $(tput setaf 3)cat$(tput sgr 0)$(tput setaf 6) die Sicherungen aus.\n\n" \
-    "\nSind nun Sicherungen herausgefallen? Falls ja, müssen diese wieder aktiviert werden. Dafür kann die Datei mit $(tput setaf 3)nano$(tput sgr 0) bearbeitet werden.\nN = Sicherung ist nicht Aktiv\nY= Die Sicherung ist Aktiv" \
+    "$(tput sgr 0)$(tput setaf 6) Versuche nun zuerst mit $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6) den Namen herauszufinden und lese anschliessend mit $(tput setaf 3)cat$(tput sgr 0)$(tput setaf 6) die Sicherungen aus.\n" \
+    "\nSind nun Sicherungen herausgefallen? Falls ja, müssen diese wieder aktiviert werden. Dafür kann die Datei mit $(tput setaf 3)nano$(tput sgr 0) bearbeitet werden.\n\nN = Sicherung ist nicht Aktiv\n\nY= Die Sicherung ist Aktiv" \
     "cat /tmp/cat | grep Sicherungen-Elektrik"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Öffne die Datei mit dem Kommando $(tput setaf 3)nano Sicherungen-Elektrik$(tput sgr 0)$(tput setaf 6)." \
+    "$(tput sgr 0)$(tput setaf 6) Öffne die Datei mit dem Kommando $(tput setaf 3)nano Sicherungen-Elektrik$(tput sgr 0)$(tput setaf 6).\n\n" \
     "\U0001f4a1  Grandios! Du hast es geschafft die Sicherungen wieder zu aktivieren. Somit konnte das Licht wieder angestellt werden und wir können mit den Aufgaben weiterfahren." \
-    "! cat /AmongUs/Cafeteria/Lager/Elektrik/Sicherungen-Elektrik | grep \"= N\""
+    "! pgrep nano || cat /AmongUs/Cafeteria/Lager/Elektrik/Sicherungen-Elektrik | grep \"= N\""
 }
