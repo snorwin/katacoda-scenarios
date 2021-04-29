@@ -64,6 +64,11 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Öffne die Datei mit dem Kommando $(tput setaf 3)nano Sicherungen-Elektrik$(tput sgr 0)$(tput setaf 6).\n\n" \
+    "" \
+    "cat /tmp/nano | grep Sicherungen-Elektrik"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6) Aktiviere nun die Sicherungen indem der Buchstabe $(tput setaf 3)N$(tput sgr 0)$(tput setaf 6)  mit dem Buchstaben $(tput setaf 3)Y$(tput sgr 0)$(tput setaf 6) ersetzt wird. Wurde das gemacht, kann das File mit der Tastenkombination $(tput setaf 3)Ctrl + X$(tput sgr 0)$(tput setaf 6)  geschlossen werden. Achtung! Die Veränderungen müssen nach der Eingabe mit $(tput setaf 3)Ctrl + Y$(tput sgr 0)$(tput setaf 6) und $(tput setaf 3)ENTER$(tput sgr 0)$(tput setaf 6) gespeichert werden.\n\n" \
     "\U0001f4a1  Grandios! Du hast es geschafft die Sicherungen wieder zu aktivieren. Somit konnte das Licht wieder angestellt werden und wir können mit den Aufgaben weiterfahren." \
     "! pgrep nano && cat /AmongUs/Cafeteria/Lager/Elektrik/Sicherungen-Elektrik | grep \"= N\""
 }
