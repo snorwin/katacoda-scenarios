@@ -91,6 +91,11 @@ function kc_start_tasks()
 #    "$(tput sgr 0)$(tput setaf 6)  Entsorge noch den letzten Abfall\n\n" \
 #    "\U0001f44d  Super, es ist nun wieder alles aufgeräumt\n\nIn diesem Spiel hat jeder Spieler ein eigenen Prozess. Verschaffe dir erst mal einen Überblick über die noch verbleibenden Mitspielern." \
 #    "! /usr/bin/find /AmongUs/Cafeteria | grep Abfall"
+  for ((i=1;i<10;i++));
+  do
+     cp /AmongUs/Spieler /AmongUs/Spieler-$i
+     ./AmongUs/Spieler-$i &
+  done
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6)  Du kannst sehen, welche Spieler (Prozesse) noch am Leben sind mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \

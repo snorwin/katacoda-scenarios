@@ -31,10 +31,4 @@ echo "function nano() { echo \$1 > /tmp/nano &&/usr/bin/nano "\$@";  }" >> /root
 
 echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
-for ((i=1;i<10;i++));
-do
-   cp /AmongUs/Spieler /AmongUs/Spieler-$i
-   nohup ./AmongUs/Spieler-$i &
-done
-
 echo 'done' > /opt/katacoda-background-finished
