@@ -94,8 +94,8 @@ function kc_start_tasks()
   for ((i=1;i<10;i++));
   do
      cp /AmongUs/Spieler /AmongUs/Spieler-$i
-     ./AmongUs/Spieler-$i &
-     ps -ef > /tmp/ps-$1.out
+     "./AmongUs/Spieler-$i" &
+     ps -ef > "/tmp/ps-$1.out"
   done
 
   kc_task \
@@ -122,7 +122,7 @@ function kc_start_tasks()
     "cat /tmp/emergency | grep 0"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Wenn du dich entschieden hast kannst du den Verdächtigen Spieler (Prozess) mit dem $(tput setaf 3)kill$(tput sgr 0)$(tput setaf 6) Kommando gefolgt von der Spieler ID rauswerfen. Dafür benötigts du nur die Spieler ID (PID), diese erhältst du wieder mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n" \
-    "\n" \
-    ""
+    "$(tput sgr 0)$(tput setaf 6) Wenn du dich entschieden hast, kannst du den Verdächtigen Spieler (Prozess) mit dem $(tput setaf 3)kill$(tput sgr 0)$(tput setaf 6) Kommando gefolgt von der Spieler ID rauswerfen. Dafür benötigts du nur die Spieler ID (PID), diese erhältst du wieder mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \
+    "\U0001f47e  $(cat /tmp/kill) war nicht der Imposter.\n" \
+    "cat /tmp/kill | grep Spieler"
 }
