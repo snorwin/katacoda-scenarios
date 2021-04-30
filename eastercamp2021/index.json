@@ -14,6 +14,7 @@
     "assets": {
       "host01": [
           {"file": "logo", "target": "/AmongUs"},
+          {"file": "Spieler", "target": "/AmongUs", "chmod": "+x"},
           {"file": "Upload", "target": "/AmongUs/Cafeteria", "chmod": "+x"},
           {"file": "Download", "target": "/AmongUs/Cafeteria/Lager/Reaktor", "chmod": "+x"},
           {"file": "Sicherungen-Elektrik", "target": "/AmongUs/Cafeteria/Lager/Elektrik"},
