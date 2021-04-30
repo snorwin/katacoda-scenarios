@@ -111,8 +111,8 @@ function kc_start_tasks()
     "cat /tmp/ps | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Gehe rasch in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und starte ein EMERGENCY MEETING mit dem Kommando $(tput setaf 3)EMERGENCY$(tput sgr 0)$(tput setaf 6)\n" \
-    "\n" \
+    "$(tput sgr 0)$(tput setaf 6) Gehe rasch in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und starte ein EMERGENCY MEETING mit dem Kommando $(tput setaf 3)EMERGENCY$(tput sgr 0)$(tput setaf 6)" \
+    "" \
     "cat /tmp/emergency | grep 1"
 
   kc_task \
