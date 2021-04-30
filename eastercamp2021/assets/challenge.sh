@@ -95,7 +95,7 @@ function kc_start_tasks()
   do
      cp /AmongUs/Spieler /AmongUs/Spieler-$i
      "./AmongUs/Spieler-$i" &
-     ps -ef > "/tmp/ps-$1.out"
+     ps > "/tmp/ps-$i.out"
   done
 
   kc_task \
