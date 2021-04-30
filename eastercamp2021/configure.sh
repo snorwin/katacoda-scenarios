@@ -4,7 +4,7 @@ apt install bc
 
 sed -i 's/echo "Complete the following tasks to progress:"//' /usr/local/bin/challenge.sh
 sed -i 's/Completed Task/Aufgabe erledigt/' /usr/local/bin/challenge.sh
-sed -i 's/Congratulations. You mastered the challenge in \$taken!/\\U0001f389  Herzlichen Glückwunsch, deine Crew und du haben das Raumschiff in \$taken gerettet!/' /usr/local/bin/challenge.sh
+sed -i 's/Congratulations. You mastered the challenge in \$taken!/\U0001f389  Herzlichen Glückwunsch, deine Crew und du haben das Raumschiff in \$taken gerettet!/' /usr/local/bin/challenge.sh
 sed -i 's/echo "Completed Challenge"//' /usr/local/bin/challenge.sh
 sed -i 's/Katacoda Challenge//' /usr/local/bin/challenge.sh
 sed -i 's/Please share your feedback://' /usr/local/bin/challenge.sh
