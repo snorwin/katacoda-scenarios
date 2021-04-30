@@ -1,1 +1,1 @@
-Linux ist überall - tauche ein in die Welt der Linux Shell, versuche den Host vor den Sabotagen des "Imposters" zu bewahren und erledige in der Zwischenzeit alle deine Aufgaben. Bist du neugierig, dann sein ein Teil der Crew.
+Linux ist überall - tauche ein in die Welt der Linux Shell, versuche den Host vor den Sabotagen des Verräters zu bewahren und erledige in der Zwischenzeit alle deine Aufgaben. Bist du neugierig, dann sein ein Teil der Crew.

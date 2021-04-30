@@ -22,7 +22,7 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Um das Spiel zu starten, gehe nun zurück in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6).\n" \
-    "\nFalls du dich mal komplett verirrt hast, verwende das Kommando $(tput setaf 3)cd /AmongUs/Cafeteria$(tput sgr 0) um immer wieder in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0) zu gelangen.\n\nJetzt wird es aber langsam Zeit dass du deine Aufgaben erledigst, aber nimm dich in acht vor dem Imposter.\n\nDeine erste Aufgabe wartet im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0) auf dich. Sehe dir die Map an, um herauszufinden wie du zu dem Raum gelangen kannst. " \
+    "\nFalls du dich mal komplett verirrt hast, verwende das Kommando $(tput setaf 3)cd /AmongUs/Cafeteria$(tput sgr 0) um immer wieder in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0) zu gelangen.\n\nJetzt wird es aber langsam Zeit dass du deine Aufgaben erledigst, aber nimm dich in acht vor dem Verräter.\n\nDeine erste Aufgabe wartet im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0) auf dich. Sehe dir die Map an, um herauszufinden wie du zu dem Raum gelangen kannst. " \
     "! pgrep bash | xargs -L1 pwdx | grep Cafeteria/"
 
   kc_task \
@@ -49,7 +49,7 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Begebe dich in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und lade dort die Informationen wieder hoch, um die erste Aufgabe abzuschliessen.\n\n" \
-    "\U0001f4aa  Echt stark, du hast deine erste Aufgabe erfolgreich abgeschlossen... \n\n\n\U0001F4A5  Peng! Achtung der Imposter hat die Elektrik manipuliert und die Sicherungen für das Licht ausgeschaltet. Nun sehen wir fast nichts mehr. Wir müssen den Weg zum $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0) Raum finden um das Licht wieder anzuschalten. " \
+    "\U0001f4aa  Echt stark, du hast deine erste Aufgabe erfolgreich abgeschlossen... \n\n\n\U0001F4A5  Peng! Achtung der Verräter hat die Elektrik manipuliert und die Sicherungen für das Licht ausgeschaltet. Nun sehen wir fast nichts mehr. Wir müssen den Weg zum $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0) Raum finden um das Licht wieder anzuschalten. " \
     "cat /tmp/upload | grep 1"
 
   kc_task \
@@ -117,12 +117,12 @@ function kc_start_tasks()
     "cat /tmp/emergency | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Lese die Diskussion aufmerksam mit, anschliessend musst du bestimmen wer der Imposter sein könnte.\n" \
+    "$(tput sgr 0)$(tput setaf 6) Lese die Diskussion aufmerksam mit, anschliessend musst du bestimmen wer der Verräter sein könnte.\n" \
     "\nNun, du bist der letzte der Abstimmen muss! Dein Stimme wirft den Verdächtigen raus." \
     "cat /tmp/emergency | grep 0"
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Wenn du dich entschieden hast, kannst du den Verdächtigen Spieler (Prozess) mit dem $(tput setaf 3)kill$(tput sgr 0)$(tput setaf 6) Kommando gefolgt von der Spieler ID rauswerfen. Dafür benötigts du nur die Spieler ID (PID), diese erhältst du wieder mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \
-    "\U0001f47e  Der Verdächtige war nicht der Imposter.\n" \
+    "\U0001f47e  Der Verdächtige war nicht der Verräter. (1 Verräter übrig)\n" \
     "cat /tmp/kill | grep Spieler"
 }
