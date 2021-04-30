@@ -5,7 +5,7 @@ if [[ "$(pwd)" != "/AmongUs/Cafeteria" ]]; then
   exit 0
 fi
 
-if [[ "$(cat /tmp/emergency)" == "0" ]]; then
+if [[ "$(cat /tmp/emergency 2>/dev/null)" == "0" ]]; then
   echo "Du kannst nur einmal ein EMERGENCY MEETING starten!"
   exit 0
 fi
