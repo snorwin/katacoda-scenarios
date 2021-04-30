@@ -17,7 +17,8 @@
           {"file": "Upload", "target": "/AmongUs/Cafeteria", "chmod": "+x"},
           {"file": "Download", "target": "/AmongUs/Cafeteria/Lager/Reaktor", "chmod": "+x"},
           {"file": "Sicherungen-Elektrik", "target": "/AmongUs/Cafeteria/Lager/Elektrik"},
-          {"file": "challenge.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+          {"file": "challenge.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+          {"file": "EMERGENCY", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
