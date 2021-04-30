@@ -5,6 +5,11 @@ if [[ "$(pwd)" != "/AmongUs/Cafeteria" ]]; then
   exit 0
 fi
 
+if [[ "$(cat /tmp/emergency)" == "0" ]]; then
+  echo "Du kannst nur einmal ein EMERGENCY MEETING starten!"
+  exit 0
+fi
+
 echo "1" > /tmp/emergency
 
 sleep 1
