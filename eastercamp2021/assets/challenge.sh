@@ -123,6 +123,6 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Wenn du dich entschieden hast, kannst du den Verdächtigen Spieler (Prozess) mit dem $(tput setaf 3)kill$(tput sgr 0)$(tput setaf 6) Kommando gefolgt von der Spieler ID rauswerfen. Dafür benötigts du nur die Spieler ID (PID), diese erhältst du wieder mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \
-    "\U0001f47e  Der Spieler war nicht der Imposter.\n" \
+    "\U0001f47e  Der Verdächtige war nicht der Imposter.\n" \
     "cat /tmp/kill | grep Spieler"
 }
