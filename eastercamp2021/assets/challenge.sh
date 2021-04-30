@@ -94,8 +94,7 @@ function kc_start_tasks()
   for ((i=1;i<10;i++));
   do
      cp /AmongUs/Spieler /AmongUs/Spieler-$i
-     "./AmongUs/Spieler-$i" &
-     ps > "/tmp/ps-$i.out"
+     /AmongUs/Spieler-$i &
   done
 
   kc_task \
