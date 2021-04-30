@@ -118,7 +118,7 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Lese die Diskussion aufmerksam mit, anschliessend musst du bestimmen wer der Verräter sein könnte.\n" \
-    "\nNun, du bist der letzte der Abstimmen muss! Dein Stimme wirft den Verdächtigen raus." \
+    "\nNun, du bist der letzte der abstimmen muss! Deine Stimme wirft den Verdächtigen raus." \
     "cat /tmp/emergency | grep 0"
 
   kc_task \
