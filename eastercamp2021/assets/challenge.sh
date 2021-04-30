@@ -95,7 +95,7 @@ function kc_start_tasks()
   kc_task \
     "$(tput sgr 0)$(tput setaf 6)  Du kannst sehen, welche Spieler (Prozesse) noch am Leben sind mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \
     "\U0001f630  Hast du das auch gehört? Da war doch etwas in der Navigation?" \
-    "cat /tmp/upload | grep 1"
+    "cat /tmp/ps | grep 1"
 
   rm /tmp/ps
   pkill Spieler-3
@@ -103,7 +103,7 @@ function kc_start_tasks()
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Kontrolliere nochmals, ob alle anderen Spieler noch am Leben sind.\n" \
     "\nGut... oder auch nicht. Es hat den Spieler-3 erwischt!\n" \
-    "cat /tmp/upload | grep 1"
+    "cat /tmp/ps | grep 1"
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Gehe rasch in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und starte ein EMERGENCY MEETING mit dem Kommando $(tput setaf 3)EMERGENCY$(tput sgr 0)$(tput setaf 6)\n" \
