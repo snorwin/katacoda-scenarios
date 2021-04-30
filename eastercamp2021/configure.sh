@@ -28,7 +28,7 @@ echo "alias find='pwd | /usr/bin/cat > /tmp/find && find'" >> /root/.bashrc
 echo "alias ps='echo 1 > /tmp/ps && ps -ef | head -1 && ps -ef | grep Spieler | grep -v grep'" >> /root/.bashrc
 echo "function cat() { /usr/bin/cat "\$@" && echo \$1 > /tmp/cat; }" >> /root/.bashrc
 echo "function nano() { echo \$1 > /tmp/nano &&/usr/bin/nano "\$@";  }" >> /root/.bashrc
-echo "function kill() { /bin/ps -p $1 -o command > /tmp/kill && /bin/kill "\$@"; }" >> /root/.bashrc
+echo "function kill() { /bin/ps -p \$1 -o command > /tmp/kill && /bin/kill "\$@"; }" >> /root/.bashrc
 
 echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
