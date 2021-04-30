@@ -27,7 +27,7 @@ sleep 1
 echo "$(tput setaf 2)Spieler-2:$(tput sgr 0) Ich habe Spieler-5 nicht gesehen und war auch in der Nähe."
 sleep 1
 echo "$(tput setaf 2)Spieler-5:$(tput sgr 0) Ich finde Spieler-2 ist verdächtig."
-sleep 1
+sleep 2
 echo "$(tput setaf 2)Spieler-2:$(tput sgr 0) Wieso ich?"
 echo "$(tput setaf 2)Spieler-1:$(tput sgr 0) Wieso Spieler-2? Der war doch bei mir."
 sleep 1
