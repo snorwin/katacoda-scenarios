@@ -13,7 +13,7 @@ sed -i 's/printf "$value" | fmt $FMT_OPTIONS/printf "$value"/' /usr/local/bin/ch
 
 mkdir -p /AmongUs/
 mkdir -p /AmongUs/Cafeteria
-mkdir -p /AmongUs/Cafeteria/Admin/o2
+mkdir -p /AmongUs/Cafeteria/Admin/Kommunikation
 mkdir -p /AmongUs/Cafeteria/Admin/Antrieb
 mkdir -p /AmongUs/Cafeteria/Lager
 mkdir -p /AmongUs/Cafeteria/Lager/Elektrik
@@ -23,7 +23,7 @@ mkdir -p /AmongUs/Cafeteria/Security
 
 echo "Abfall" > /AmongUs/Cafeteria/Abfall
 echo "Abfall" > /AmongUs/Cafeteria/Navigation/Abfall
-echo "Abfall" > /AmongUs/Cafeteria/Admin/o2/Abfall
+echo "Abfall" > /AmongUs/Cafeteria/Admin/Kommunikation/Abfall
 
 echo "alias pwd='echo 1 > /tmp/pwd && pwd'" >> /root/.bashrc
 echo "alias ls='echo 1 > /tmp/ls && ls --color=auto'" >> /root/.bashrc
