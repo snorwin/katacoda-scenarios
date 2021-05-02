@@ -133,12 +133,12 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Versuche irgendwie in den $(tput setaf 1)$(tput setab 7)Antrieb$(tput sgr 0)$(tput setaf 6)  zu gelangen.\n" \
-    "\n " \
+    "" \
     "pgrep bash | xargs -L1 pwdx | grep Antrieb"
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Nun musst du das den Code aus einer Datei auslesen, mit $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6) siehst du alle Dateien welche im Raum liegen. Öffne die Datei mit dem Kommando $(tput setaf 3)cat$(tput sgr 0)$(tput setaf 6) gefolgt vom Namen der Datei.\n" \
-    "\n" \
+    "" \
     "cat /tmp/cat | grep Code"
 
   kc_task \
