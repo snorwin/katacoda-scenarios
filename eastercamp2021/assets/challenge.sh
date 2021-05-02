@@ -43,7 +43,7 @@ function kc_start_tasks()
     "cat /tmp/ls | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Starte das Download Programm indem du $(tput setaf 3)./Download$(tput sgr 0)$(tput setaf 6) als Kommando eingibst.\n" \
+    "$(tput sgr 0)$(tput setaf 6) Starte das Download-Programm, indem du $(tput setaf 3)./Download$(tput sgr 0)$(tput setaf 6) als Kommando eingibst.\n" \
     "\nDie Informationen wurden erfolgreich heruntergeladen." \
     "cat /tmp/download | grep 1"
 
@@ -78,18 +78,18 @@ function kc_start_tasks()
     "cat /tmp/find | grep '/AmongUs/Cafeteria$'"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Mache dich auf den Weg in einer der Räume und wenn du im Raum angekommen bist verwende das Kommando $(tput setaf 3)rm Abfall$(tput sgr 0)$(tput setaf 6) um die Datei zu löschen und somit den Abfall zu entsorgen.\n" \
+    "$(tput sgr 0)$(tput setaf 6) Mache dich auf den Weg in einer der Räume und wenn du im Raum angekommen bist, verwende das Kommando $(tput setaf 3)rm Abfall$(tput sgr 0)$(tput setaf 6) um die Datei zu löschen und somit den Abfall zu entsorgen.\n" \
     "\nJetzt sind es nur noch zwei." \
     "/usr/bin/find /AmongUs/Cafeteria | grep Abfall | wc -l | grep 2"
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6)  Suche weiter nach Abfall\n" \
-    "\nDu hast es fast geschafft" \
+    "\nDu hast es fast geschafft." \
     "/usr/bin/find /AmongUs/Cafeteria | grep Abfall | wc -l | grep 1"
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6)  Entsorge noch den letzten Abfall\n\n" \
-    "\U0001f44d  Super, es ist nun wieder alles aufgeräumt\n\nIn diesem Spiel hat jeder Spieler ein eigenen Prozess. Verschaffe dir erst mal einen Überblick über die noch verbleibenden Mitspielern." \
+    "\U0001f44d  Super, es ist nun wieder alles aufgeräumt.\n\nIn diesem Spiel hat jeder Spieler einen eigenen Prozess (du bist Spieler-8). Verschaffe dir erst mal einen Überblick über die noch verbleibenden Mitspielern." \
     "! /usr/bin/find /AmongUs/Cafeteria | grep Abfall"
 
   for ((i=1;i<10;i++));
@@ -99,7 +99,7 @@ function kc_start_tasks()
   done
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6)  Du kannst sehen, welche Spieler (Prozesse) noch am Leben sind mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \
+    "$(tput sgr 0)$(tput setaf 6)  Du kannst mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6) sehen, welche Spieler (Prozesse) noch am Leben sind.\n\n" \
     "\U0001f630  Hast du das auch gehört? Da war doch etwas in der Navigation?" \
     "cat /tmp/ps | grep 1"
 
@@ -117,12 +117,12 @@ function kc_start_tasks()
     "cat /tmp/emergency | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Lese die Diskussion aufmerksam mit, anschliessend musst du bestimmen wer der Verräter sein könnte.\n" \
+    "$(tput sgr 0)$(tput setaf 6) Lese die Diskussion aufmerksam mit, anschliessend musst du bestimmen, wer der Verräter sein könnte.\n" \
     "\nNun, du bist der letzte der abstimmen muss! Deine Stimme wirft den Verdächtigen raus." \
     "cat /tmp/emergency | grep 0"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Wenn du dich entschieden hast, kannst du den Verdächtigen Spieler (Prozess) mit dem $(tput setaf 3)kill$(tput sgr 0)$(tput setaf 6) Kommando gefolgt von der Spieler ID rauswerfen. Dafür benötigts du nur die Spieler ID (PID), diese erhältst du wieder mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Wenn du dich entschieden hast, kannst du den verdächtigen Spieler (Prozess) mit dem $(tput setaf 3)kill$(tput sgr 0)$(tput setaf 6) Kommando gefolgt von der Spieler ID rauswerfen. Dafür benötigst du nur die Spieler ID (PID), diese erhältst du wieder mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \
     "\U0001f47e  Der Verdächtige war nicht der Verräter. (1 Verräter übrig)\n\nDu hast nur noch eine Aufgabe, die du erledigen musst. Beeile dich \U0001F3C3" \
     "cat /tmp/kill | grep Spieler"
 
@@ -132,12 +132,12 @@ function kc_start_tasks()
     "cat /tmp/reaktor | grep 0"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Versuche irgendwie in den $(tput setaf 1)$(tput setab 7)Antrieb$(tput sgr 0)$(tput setaf 6)  zu gelangen.\n" \
+    "$(tput sgr 0)$(tput setaf 6) Versuche irgendwie in den $(tput setaf 1)$(tput setab 7)Antrieb$(tput sgr 0)$(tput setaf 6) zu gelangen.\n" \
     "" \
     "pgrep bash | xargs -L1 pwdx | grep Antrieb"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Nun musst du das den Code aus einer Datei auslesen, mit $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6) siehst du alle Dateien welche im Raum liegen. Öffne die Datei mit dem Kommando $(tput setaf 3)cat$(tput sgr 0)$(tput setaf 6) gefolgt vom Namen der Datei.\n" \
+    "$(tput sgr 0)$(tput setaf 6) Nun musst du das den Code aus einer Datei auslesen, mit $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6) siehst du alle Dateien, welche im Raum liegen. Öffne die Datei mit dem Kommando $(tput setaf 3)cat$(tput sgr 0)$(tput setaf 6) gefolgt vom Namen der Datei.\n" \
     "" \
     "cat /tmp/cat | grep Code"
 
