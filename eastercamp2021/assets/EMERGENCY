@@ -15,20 +15,20 @@ echo "1" > /tmp/emergency
 sleep 1
 echo "$(tput setaf 2)Spieler-1:$(tput sgr 0) Ich war zusammen mit Spieler-2 im Elektrik Raum!"
 sleep 1
-echo "$(tput setaf 2)Spieler-4:$(tput sgr 0) Wer hat das Meeting gestartet???"
+echo "$(tput setaf 3)Spieler-4:$(tput sgr 0) Wer hat das Meeting gestartet???"
 sleep 2
-echo "$(tput setaf 2)Spieler-6:$(tput sgr 0) Ich war zusammen mit Spieler-4 in der Cafeteria!"
+echo "$(tput setaf 4)Spieler-6:$(tput sgr 0) Ich war zusammen mit Spieler-4 in der Cafeteria!"
 echo "$(tput setaf 2)Spieler-1:$(tput sgr 0) Ich verdächtige Spieler-9!"
 sleep 2
-echo "$(tput setaf 2)Spieler-4:$(tput sgr 0) Ich war bei Spieler-9 im Admin!"
+echo "$(tput setaf 3)Spieler-4:$(tput sgr 0) Ich war bei Spieler-9 im Admin!"
 sleep 1
-echo "$(tput setaf 2)Spieler-5:$(tput sgr 0) Ich war alleine in der Navigation."
+echo "$(tput setaf 5)Spieler-5:$(tput sgr 0) Ich war alleine in der Navigation."
 sleep 1
-echo "$(tput setaf 2)Spieler-2:$(tput sgr 0) Ich habe Spieler-5 nicht gesehen und war auch in der Nähe."
+echo "$(tput setaf 6)Spieler-2:$(tput sgr 0) Ich habe Spieler-5 nicht gesehen und war auch in der Nähe."
 sleep 1
-echo "$(tput setaf 2)Spieler-5:$(tput sgr 0) Ich finde Spieler-2 ist verdächtig."
+echo "$(tput setaf 5)Spieler-5:$(tput sgr 0) Ich finde Spieler-2 ist verdächtig."
 sleep 2
-echo "$(tput setaf 2)Spieler-2:$(tput sgr 0) Wieso ich?"
+echo "$(tput setaf 6)Spieler-2:$(tput sgr 0) Wieso ich?"
 echo "$(tput setaf 2)Spieler-1:$(tput sgr 0) Wieso Spieler-2? Der war doch bei mir."
 sleep 1
 echo ""
