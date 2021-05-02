@@ -48,7 +48,7 @@ function kc_start_tasks()
     "cat /tmp/download | grep 1"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Begebe dich in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und lade dort die Informationen wieder hoch, um die erste Aufgabe abzuschliessen.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6) Begebe dich in die $(tput setaf 1)$(tput setab 7)Cafeteria$(tput sgr 0)$(tput setaf 6) und versuche dort herauzufinden, wie du die Informationen wieder hochladen kannst, um die erste Aufgabe abzuschliessen.\n\n" \
     "\U0001f4aa  Echt stark, du hast deine erste Aufgabe erfolgreich abgeschlossen... \n\n\n\U0001F4A5  Peng! Achtung der Verräter hat die Elektrik manipuliert und die Sicherungen für das Licht ausgeschaltet. Nun sehen wir fast nichts mehr. Wir müssen den Weg zum $(tput setaf 1)$(tput setab 7)Elektrik$(tput sgr 0) Raum finden um das Licht wieder anzuschalten. " \
     "cat /tmp/upload | grep 1"
 
