@@ -37,4 +37,13 @@ echo "function kill() { /bin/ps -p \$1 -o command > /tmp/kill && /bin/kill "\$@"
 echo "export HOME=/AmongUs/Cafeteria" >> /root/.bashrc
 echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
+CODE=$( ((RND=RANDOM<<15|RANDOM)) ; echo ${RND: -6})
+sed -i "s/@RANDOM_CODE@/$CODE/g" /AmongUs/Cafeteria/Admin/Antrieb/Code
+
 echo 'done' > /opt/katacoda-background-finished
+
+## get random remaining user as imposter
+#IMPOSTER_NO=$(( ( RANDOM % 10 )  + 1 ))
+#set +H
+#/bin/ps -ef | grep Spieler | grep -v grep | sed "IMPOSTER_NO!d" | awk print '{ $1}' | sed 's%/AmongUs/%%g'
+#set -H

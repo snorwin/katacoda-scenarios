@@ -1,12 +1,12 @@
 #!/bin/bash
 
-code=331214
-
 echo 0 > /tmp/reaktor
 
 read -p "Code: " code
 
-if [ $((code % 2)) -eq 0 ]; then
+correctCode=$(cat /AmongUs/Cafeteria/Admin/Antrieb/Code | sed -n 2p)
+
+if [[ "$code" == "$correctCode" ]]; then
     echo "Der Code ist richtig."
     echo 1 > /tmp/reaktor
 else
