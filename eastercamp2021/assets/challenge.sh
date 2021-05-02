@@ -123,6 +123,26 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6) Wenn du dich entschieden hast, kannst du den Verdächtigen Spieler (Prozess) mit dem $(tput setaf 3)kill$(tput sgr 0)$(tput setaf 6) Kommando gefolgt von der Spieler ID rauswerfen. Dafür benötigts du nur die Spieler ID (PID), diese erhältst du wieder mit dem Kommando $(tput setaf 3)ps$(tput sgr 0)$(tput setaf 6).\n\n" \
-    "\U0001f47e  Der Verdächtige war nicht der Verräter. (1 Verräter übrig)\n" \
+    "\U0001f47e  Der Verdächtige war nicht der Verräter. (1 Verräter übrig)\n\nDu hast nur noch eine Aufgabe, die du erledigen musst. Beeile dich \U0001F3C3" \
     "cat /tmp/kill | grep Spieler"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6) Starte den Reaktor indem du das Kommando $(tput setaf 3)./StartReaktor$(tput sgr 0)$(tput setaf 6) im $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) Raum verwendest.\n\n" \
+    "\U0001F926  Upps... es braucht ja noch einen Code um den Reaktor zu starten (mit $(tput setaf 3)Ctrl + C$(tput sgr 0) kannst du den Start wieder abbrechen). Ich glaube du findest den Code im $(tput setaf 1)$(tput setab 7)Antrieb$(tput sgr 0) Raum." \
+    "cat /tmp/reaktor | grep 0"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6) Versuche irgendwie in den $(tput setaf 1)$(tput setab 7)Antrieb$(tput sgr 0) zu gelangen.\n" \
+    "\n " \
+    "pgrep bash | xargs -L1 pwdx | grep Antrieb"
+
+  kc_task \
+    "$(tput sgr 0)$(tput setaf 6) Nun musst du das den Code aus einer Datei auslesen, mit $(tput setaf 3)ls$(tput sgr 0)$(tput setaf 6) siehst du alle Dateien welche im Raum liegen. Öffne die Datei mit dem Kommando $(tput setaf 3)cat$(tput sgr 0)$(tput setaf 6) gefolgt vom Namen der Datei.\n" \
+    "\n" \
+    "cat /tmp/cat | grep Code"
+
+  kc_task \
+    "Wenn du dir den Code aufgeschrieben hast, mache dich wieder auf den Weg in den $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) Raum und starte den Raktor mit dem Code.\n\n" \
+    "\u2728  Super! Der Reaktor wurde gestartet und du hast alle deine Aufgaben erledigt." \
+    "cat /tmp/reaktor | grep 1"
 }

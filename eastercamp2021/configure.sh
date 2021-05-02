@@ -14,6 +14,7 @@ sed -i 's/printf "$value" | fmt $FMT_OPTIONS/printf "$value"/' /usr/local/bin/ch
 mkdir -p /AmongUs/
 mkdir -p /AmongUs/Cafeteria
 mkdir -p /AmongUs/Cafeteria/Admin/O2
+mkdir -p /AmongUs/Cafeteria/Admin/Antrieb
 mkdir -p /AmongUs/Cafeteria/Lager
 mkdir -p /AmongUs/Cafeteria/Lager/Elektrik
 mkdir -p /AmongUs/Cafeteria/Lager/Reaktor

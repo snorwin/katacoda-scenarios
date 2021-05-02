@@ -1,0 +1,14 @@
+#!/bin/bash
+
+code=331214
+
+echo 0 > /tmp/reaktor
+
+read -p "Code: " code
+
+if [ $((code % 2)) -eq 0 ]; then
+    echo "Der Code ist richtig."
+    echo 1 > /tmp/reaktor
+else
+    echo "Der Code ist falsch. Versuche es erneut und überprüfe ob du den Code richitg eingegeben hast."
+fi
