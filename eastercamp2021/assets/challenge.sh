@@ -132,7 +132,7 @@ function kc_start_tasks()
     "cat /tmp/reaktor | grep 0"
 
   kc_task \
-    "$(tput sgr 0)$(tput setaf 6) Versuche irgendwie in den $(tput setaf 1)$(tput setab 7)Antrieb$(tput sgr 0) zu gelangen.\n" \
+    "$(tput sgr 0)$(tput setaf 6) Versuche irgendwie in den $(tput setaf 1)$(tput setab 7)Antrieb$(tput sgr 0)$(tput setaf 6)  zu gelangen.\n" \
     "\n " \
     "pgrep bash | xargs -L1 pwdx | grep Antrieb"
 
@@ -142,7 +142,7 @@ function kc_start_tasks()
     "cat /tmp/cat | grep Code"
 
   kc_task \
-    "Wenn du dir den Code aufgeschrieben hast, mache dich wieder auf den Weg in den $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) Raum und starte den Raktor mit dem Code.\n\n" \
+    "$(tput sgr 0)$(tput setaf 6)  Wenn du dir den Code aufgeschrieben hast, mache dich wieder auf den Weg in den $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) Raum und starte den Raktor mit dem Code.\n\n" \
     "\u2728  Super! Der Reaktor wurde gestartet und du hast alle deine Aufgaben erledigt." \
     "cat /tmp/reaktor | grep 1"
 }
