@@ -34,6 +34,7 @@ echo "function cat() { /usr/bin/cat "\$@" && echo \$1 > /tmp/cat; }" >> /root/.b
 echo "function nano() { echo \$1 > /tmp/nano &&/usr/bin/nano "\$@";  }" >> /root/.bashrc
 echo "function kill() { /bin/ps -p \$1 -o command > /tmp/kill && /bin/kill "\$@"; }" >> /root/.bashrc
 
+echo "export HOME=/AmongUs/Cafeteria" >> /root/.bashrc
 echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
 echo 'done' > /opt/katacoda-background-finished
