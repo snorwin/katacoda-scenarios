@@ -42,8 +42,4 @@ sed -i "s/@RANDOM_CODE@/$CODE/g" /AmongUs/Cafeteria/Admin/Antrieb/Code
 
 echo 'done' > /opt/katacoda-background-finished
 
-## get random remaining user as imposter
-#IMPOSTER_NO=$(( ( RANDOM % 10 )  + 1 ))
-#set +H
-#/bin/ps -ef | grep Spieler | grep -v grep | sed "IMPOSTER_NO!d" | awk print '{ $1}' | sed 's%/AmongUs/%%g'
-#set -H
+U+1F5E1

@@ -141,8 +141,13 @@ function kc_start_tasks()
     "" \
     "cat /tmp/cat | grep Code"
 
+  IMPOSTER_NO=$(( ( RANDOM % 8 )  + 1 ))
+  set +H
+  IMPOSTER=$(/bin/ps -ef | grep Spieler | grep -v grep | sed "$IMPOSTER_NO!d" | awk ' { print $9 }' | sed 's%/AmongUs/%%g')
+  set -H
+
   kc_task \
     "$(tput sgr 0)$(tput setaf 6)  Wenn du dir den Code aufgeschrieben hast, mache dich wieder auf den Weg in den $(tput setaf 1)$(tput setab 7)Reaktor$(tput sgr 0)$(tput setaf 6) Raum und starte den Raktor mit dem Code.\n\n" \
-    "\u2728  Super! Der Reaktor wurde gestartet und du hast alle deine Aufgaben erledigt." \
+    "\u2728  Super! Der Reaktor wurde gestartet und du hast alle deine Aufgaben erledigt.\n\n\U0001F5E1 ${IMPOSTER} war der Verräter."\
     "cat /tmp/reaktor | grep 1"
 }
