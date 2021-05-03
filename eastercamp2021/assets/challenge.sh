@@ -89,7 +89,7 @@ function kc_start_tasks()
 
   kc_task \
     "$(tput sgr 0)$(tput setaf 6)  Entsorge noch den letzten Abfall\n\n" \
-    "\U0001f44d  Super, es ist nun wieder alles aufgeräumt.\n\nIn diesem Spiel hat jeder Spieler einen eigenen Prozess (du bist Spieler-8). Verschaffe dir erst mal einen Überblick über die noch verbleibenden Mitspielern." \
+    "\U0001f44d  Super, es ist nun wieder alles aufgeräumt.\n\nIn diesem Spiel hat jeder Spieler einen eigenen Prozess. Verschaffe dir erst mal einen Überblick über die noch verbleibenden Mitspielern." \
     "! /usr/bin/find /AmongUs/Cafeteria | grep Abfall"
 
   for ((i=1;i<10;i++));
