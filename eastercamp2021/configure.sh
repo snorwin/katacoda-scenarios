@@ -41,5 +41,3 @@ CODE=$( ((RND=RANDOM<<15|RANDOM)) ; echo ${RND: -6})
 sed -i "s/@RANDOM_CODE@/$CODE/g" /AmongUs/Cafeteria/Admin/Antrieb/Code
 
 echo 'done' > /opt/katacoda-background-finished
-
-U+1F5E1
