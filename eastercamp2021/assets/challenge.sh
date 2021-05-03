@@ -141,7 +141,7 @@ function kc_start_tasks()
     "" \
     "cat /tmp/cat | grep Code"
 
-  IMPOSTER_NO=$(( ( RANDOM % 8 )  + 1 ))
+  IMPOSTER_NO=$(( ( RANDOM % 7 )  + 1 ))
   set +H
   IMPOSTER=$(/bin/ps -ef | grep Spieler | grep -v grep | sed "$IMPOSTER_NO!d" | awk ' { print $9 }' | sed 's%/AmongUs/%%g')
   set -H
