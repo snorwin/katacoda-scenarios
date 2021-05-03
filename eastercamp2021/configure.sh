@@ -37,4 +37,7 @@ echo "function kill() { /bin/ps -p \$1 -o command > /tmp/kill && /bin/kill "\$@"
 echo "export HOME=/AmongUs/Cafeteria" >> /root/.bashrc
 echo "cd /AmongUs/Cafeteria" >> /root/.bashrc
 
+CODE=$( ((RND=RANDOM<<15|RANDOM)) ; echo ${RND: -6})
+sed -i "s/@RANDOM_CODE@/$CODE/g" /AmongUs/Cafeteria/Admin/Antrieb/Code
+
 echo 'done' > /opt/katacoda-background-finished
