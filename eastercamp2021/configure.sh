@@ -2,6 +2,7 @@ launch.sh
 
 apt install bc
 
+
 sed -i 's/echo "Complete the following tasks to progress:"//' /usr/local/bin/challenge.sh
 sed -i 's/Completed Task/Aufgabe erledigt/' /usr/local/bin/challenge.sh
 sed -i 's/echo "Congratulations. You mastered the challenge in \$taken!/echo -e "\\U0001f389  Herzlichen Gl\\U000000fcckwunsch, deine Crew und du haben das Raumschiff gerettet ($taken)!/' /usr/local/bin/challenge.sh
